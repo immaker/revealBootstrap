@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.sendfile('views/index.html');
 });
 
-router.get('/projectx', function(req, res, next) {
+router.get('/projectx/', function(req, res, next) {
   res.sendfile('views/projectx.html');
 })
 
