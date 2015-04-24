@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>bootstrap - The css Framework</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="/css/reveal.css">
+  <link rel="stylesheet" href="/css/theme/black.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="/lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <style>
+    .reveal a {
+      color:#E5D85C;
+    }
+
+    .reveal pre {
+      display: block;
+      position: relative;
+      width: 100%;
+      margin: 20px auto;
+      text-align: left;
+      font-size: 0.55em;
+      font-family: monospace;
+      line-height: 1.2em;
+      word-wrap: break-word;
+    }
+
+    .reveal .explain {
+      font-size: 80px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section data-background="#2aa57e">
+      <h1>Manager</h1>
+      <h3>for Myschedule</h3>
+      <p>
+        <small>Created by <a href="https://github.com/immaker">김태준</a> / <a href="">taescais@gmail.com</a></small>
+      </p>
+    </section>
+
+    <section>
+      <h3>예능, 드라마 좋아하시나요?</h3>
+    </section>
+
+    <section data-background="/lib/img/ch.jpg" class="explain">
+      <p>feat. 치느님</p>
+    </section>
+
+    <section data-background="/lib/img/programs.png" class="explain">
+    </section>
+
+    <section>
+      <h3>많아도 너무 많다.......</h3>
+    </section>
+
+    <section>
+      <img width="700" height="500" data-src="/lib/img/honran.jpg" alt="chaos">
+      <p>무한도전 E.424을... 봤던가...</p>
+    </section>
+
+    <section>
+      <p>그렇다고 이걸 매주 수첩이나 TODO 리스트로 관리하기엔</p>
+      <p class="fragment highlight-red">비효율적이고..</p>
+    </section>
+
+    <section>
+      <h3>난 개발자니까 프로그램으로 만들어서 관리해보자!</h3>
+    </section>
+
+    <section data-background="/lib/img/google-cal.png" class="explain">
+    </section>
+    <section data-background="/lib/img/naver-cal.png" class="explain">
+    </section>
+
+    <section>
+      <h2>어떻게 효율적으로 관리 할 것인가?</h2>
+      <ul>
+        <li>최대한 내 시간을 단축시켜주는게 가능해야한다.</li>
+        <li><span class="fragment highlight-red">목록을 자동으로 가져오고</span> 간편한 추가,삭제</li>
+        <li>데이터는 기록하여 보관하고 확장성 용이하게 설계</li>
+        <li>친근한 UX/UI</li>
+      </ul>
+    </section>
+    <section>
+      <h3>목록을 자동으로??</h3>
+      <img width="700" height="500" data-src="/lib/img/friday-program.png" alt="friday-search-result">
+      <p class="fragment roll-in">크롤링을 이용하면 해결~</p>
+    </section>
+
+    <section>
+      <h3>크롤링이란?</h3>
+      <img width="700" height="300" data-src="/lib/img/crawling-naver.png" alt="crawling-naver">
+      <p class="fragment roll-in">뭔말이야..</p>
+    </section>
+
+    <section>
+      <h3>크롤링이란?</h3>
+      <img width="1200" height="300" data-src="/lib/img/crawling-wiki.png" alt="crawling-wiki">
+    </section>
+
+    <section>
+      <h3>크롤링이란?</h3>
+      <img width="1200" height="300" data-src="/lib/img/crawling-goal.png" alt="crawling">
+    </section>
+
+    <section>
+      <h2>어떻게 효율적으로 관리 할 것인가?</h2>
+      <ul>
+        <li>최대한 내 시간을 단축시켜주는게 가능해야한다.</li>
+        <li>목록을 자동으로 가져오고간편한 추가,삭제</li>
+        <li><span class="fragment highlight-red">데이터는 기록하여 보관하고 확장성 용이하게 설계</span></li>
+        <li>친근한 UX/UI</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Manger라는 것은 내가 귀찮은걸 다 해주는..</h3>
+      <ul>
+        <li class="fragment roll-in">책이나 영화..</li>
+        <li class="fragment roll-in">d-day...</li>
+        <li class="fragment roll-in">todo...</li>
+        <li class="fragment roll-in">달력과 관련 된 모듈 확장!</li>
+      </ul>
+    </section>
+    <section>
+      <h3></h3>
+      <img width="700" height="500" data-src="/lib/img/module.png" alt="module">
+    </section>
+
+    <section>
+      <h3>행복한 상상을 해본다면.. tobe</h3>
+    </section>
+
+    <section data-background="/lib/img/big-data.jpg" class="explain">
+    </section>
+
+    <section>
+      <h3>시청률 분석??</h3>
+      <ul>
+        <li class="fragment roll-in">성별이나.. 연령대별로</li>
+        <li class="fragment roll-in">예능, 드라마, 시사 등등..</li>
+        <li class="fragment roll-in">시간대별로.. 언제 어떻게?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>tving, 곰tv, 아프리카tv, 올레쿡 등.. </h3>
+      <p>리스트에서 클릭하여 바로 시청 가능!</p>
+    </section>
+
+    <section>
+      <h2>감사합니다.</h2>
+    </section>
+  </div>
+
+</div>
+
+<script src="/lib/js/head.min.js"></script>
+<script src="/js/reveal.js"></script>
+
+<script>
+
+  // Full list of configuration options available at:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    multiplex: {
+      id: '14289155470714242087',
+      secret: '626e92c908c2a317',
+      url: 'revealjs.jit.su:80'
+    },
+
+    // Optional reveal.js plugins
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+      { src: 'plugin/multiplex/client.js', async: true },
+      { src: 'plugin/multiplex/master.js', async: true }
+    ]
+  });
+
+</script>
+
+</body>
+</html>
