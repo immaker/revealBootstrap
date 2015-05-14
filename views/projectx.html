@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>bootstrap - The css Framework</title>
+  <title>projectx - manager</title>
 
   <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
   <meta name="author" content="Hakim El Hattab">
@@ -211,15 +211,15 @@
 
     // Optional reveal.js plugins
     dependencies: [
-      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: 'plugin/zoom-js/zoom.js', async: true },
-      { src: 'plugin/notes/notes.js', async: true },
+      { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '/plugin/zoom-js/zoom.js', async: true },
+      { src: '/plugin/notes/notes.js', async: true },
       { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-      { src: 'plugin/multiplex/client.js', async: true },
-      { src: 'plugin/multiplex/master.js', async: true }
+      { src: '/plugin/multiplex/client.js', async: true },
+      { src: '/plugin/multiplex/master.js', async: true }
     ]
   });
 
