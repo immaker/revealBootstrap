@@ -14,4 +14,8 @@ router.get('/whoisme/', function(req, res, next) {
   res.sendfile('views/whoisme.html');
 });
 
+router.get('/piki/', function(req, res) {
+  res.sendfile('views/piki.html');
+})
+
 module.exports = router;
