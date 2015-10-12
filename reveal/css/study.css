@@ -1,0 +1,28 @@
+.reveal .slides > section + .round {
+    background: #FFF none repeat scroll 0% 0%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0px 0px 0px 50px;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+    position: absolute;
+    text-align: center;
+}
+
+.contentbox.right {
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    padding: 20px;
+    float: right;
+    top: 0px;
+    width: 60%;
+}
+
+.contentbox > ul > li {
+    padding: 5px 0;
+}

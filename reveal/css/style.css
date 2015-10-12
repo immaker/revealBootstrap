@@ -27,6 +27,11 @@
 .reveal .blue {
     color: dodgerblue;
 }
+
+.reveal .orange {
+    color: orange;
+}
+
 .reveal .gray {
     color: darkgray;
     vertical-align: initial;
