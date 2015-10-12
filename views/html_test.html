@@ -1,0 +1,50 @@
+<html>
+<head>
+  <style>
+  body {
+    font-size:12px;
+  }
+  ol {
+    display:table;
+  }
+  li {
+    margin-top:40px;
+  }
+
+  div.link {
+    margin:50px 0px 0px 20px;
+  }
+  </style>
+</head>
+<body>
+  <h1>createTextNode</h1>
+  <script>
+    onload = function () {
+      document.getElementById('test1').innerHTML = '<iframe></ifrmae>';
+
+      var o = document.createTextNode('<iframe></ifrmae>');
+
+//      document.getElementById('test2').appendChild(o);
+      document.getElementById('test2').innerHTML = "<iframe></iframe>";
+console.log(o);
+console.log(document.getElementById('test2'));
+      o.style.color = 'green';
+//      document.getElementById('test2').style.color = 'blue';
+//console.log('o >>> ' + o);
+      for (numb in o) {
+        console.log(numb + '=' + o[numb]);
+      }
+    };
+  </script>
+<ol>
+  <li>innerHTML <br> <div id="test1"><iframe>&lt;/ifrmae&gt;</iframe></div></li>
+  <li>createTextNode <br> <div id="test2">&lt;iframe&gt;&lt;/ifrmae&gt;</div></li>
+  <li>xmp <br> <xmp><iframe></iframe></xmp></li>
+  <li>HTML Entities <br> &lt;iframe&gt;&lt;/iframe&gt;</li>
+</ol>
+
+<div class="link">
+  * <a href="http://fromyou.tistory.com/552" target="blank">노드란?</a><br><br>
+  * <a href="http://www.w3schools.com/html/html_entities.asp" target="blank">HTML Entities</a>
+</div>
+</body></html>

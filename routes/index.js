@@ -16,6 +16,10 @@ router.get('/whoisme/', function(req, res, next) {
 
 router.get('/piki/', function(req, res) {
   res.sendfile('views/piki.html');
-})
+});
+
+router.get('/html/', function (req, res) {
+  res.sendfile('views/html_test.html');
+});
 
 module.exports = router;
